@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Poppins-BoldItalic.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +37,12 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  background: url('../images/Website-background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8) 0 0),
+    url('../images/website-background.webp') no-repeat center center / 100% auto fixed,
+    #000;
+  color: #eee;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -34,6 +68,10 @@ body {
   gap: 1.5rem;
 }
 
+a {
+  color: #b99624;
+}
+
 .menu li a {
   text-decoration: none;
   color: white;
@@ -47,20 +85,23 @@ body {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding-top: 80px;
+  backdrop-filter: blur(2.25px);
   min-height: 100vh;
+  padding-top: 80px;
 }
 
 header {
   text-align: center;
   padding: 6rem 1rem;
+  text-wrap: balance;
 }
 
 header h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 header p {
@@ -89,30 +130,27 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
 .book-subsection {
   margin-bottom: 3rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 2rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.book-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 1.5rem auto;
 }
 
 #about {
@@ -152,11 +190,6 @@ footer {
   font-weight: bold;
   font-family: inherit;
   cursor: pointer;
-}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.8); /* 40% dunkler Overlay */
-  min-height: 100vh;
-  padding-top: 4rem; /* Platz für die feste Navigation */
 }
 
 .gold-text {
@@ -203,6 +236,41 @@ footer {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
 
+  .menu.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .dropdown-content {
+    position: relative;
+    display: block;
+    padding: 0;
+    top: auto;
+    min-width: auto;
+  }
 
+  .dropdown-content li a {
+    color: #ffc;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 1;
+  }
+}

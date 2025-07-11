@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Symbiosis</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="js/script.js"></script>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">My Symbiosis</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="menu" id="menu">
-      <li><a href="#home">Home</a></li>
-      <li class="dropdown">
-        <a href="#books">Books</a>
-        <ul class="dropdown-content">
-          <li><a href="book1.html">Book 1</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="order.html">Order</a></li>
-      <li>
-        <select id="languageSwitcher" onchange="switchLanguage(this.value)">
-          <option value="en" selected>EN</option>
-          <option value="de">DE</option>
-        </select>
-      </li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Symbiosis,leadership,relationship,book,books,brian,haywood">
+    <meta name="description" content="Explore the concept of Symbiosis in leadership and relationships in this book by Brian Haywood">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="My Symbiosis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mysimbosis.com">
+    <meta property="og:image" content="https://mysimbosis.com/images/og-image.jpg">
+    <meta property="og:description" content="Explore the concept of Symbiosis in leadership and relationships in this book by Brian Haywood">
 
-  <div class="overlay">
-    <header id="home">
-      <h1>Welcome to my Homepage</h1>
-      <p>Discover inspiring leadership books for modern visionaries.</p>
-    </header>
+    <title>My Symbiosis</title>
 
-    <main class="content" id="books">
-      <h2></h2>
-    <section class="book-subsection" id="book1" style="text-align: center;">
-  <h3 style="margin-bottom: 1rem;">SYMBIOSIS</h3>
-  <a href="book1.html">
-    <img src="images/mockup-template-of-a-paperback-book-standing-over-a-flat-background-a9929.png"
-         alt="Book Cover"
-         style="width: 400px; border-radius: 12px; margin: 2rem auto; display: block;">
-  </a>
-  <p style="font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 1.5rem auto;">
-    Utilizing Symbiotic Leadership to guide and improve Relationships
-  </p>
-</section>
-    </main>
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Symbiosis</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#books">Books</a>
+          <ul class="dropdown-content">
+            <li><a href="book1.html">Symbiosis</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li>
+          <select id="languageSwitcher" onchange="switchLanguage(this.value)">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
 
-    <footer>
-      <p>Contact us at: <a href="mailto:contact@books.com" style="color: #b99624;">contact@books.com</a></p>
-      <p>&copy; 2025 LeadershipBooks</p>
-    </footer>
-  </div>
-</body>
+    <div class="overlay">
+      <header id="home">
+        <h1>Symbiosis</h1>
+        <p>Utilizing Symbiotic Leadership to guide and improve Relationships</p>
+      </header>
+
+      <main class="content" id="books">
+        <section class="book-subsection" id="book1">
+          <h2>Symbiosis: The Book</h2>
+          <a href="book1.html">
+            <img src="images/mockup-paperback.webp" alt="Book Cover" class="book-cover">
+          </a>
+          <p class="book-subtitle">
+            Discover inspiring leadership books for modern visionaries.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Contact us at: <a href="mailto:info@mysymbiosis.com">info@mysymbiosis.com</a></p>
+        <p>&copy; 2025 Brian Haywood</p>
+      </footer>
+    </div>
+  </body>
 </html>
