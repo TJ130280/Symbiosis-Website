@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Leadership Buchpräsentation</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="js/script.js"></script>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">LeadershipBücher</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="menu" id="menu">
-      <li><a href="#home">Start</a></li>
-      <li class="dropdown">
-        <a href="#books">Bücher</a>
-        <ul class="dropdown-content">
-          <li><a href="book1-de.html">Buch 1</a></li>
-        </ul>
-      </li>
-      <li><a href="contact-de.html">Kontakt</a></li>
-      <li><a href="order-de.html">Bestellen</a></li>
-      <li>
-        <select id="languageSwitcher" onchange="switchLanguage(this.value)">
-          <option value="en">EN</option>
-          <option value="de" selected>DE</option>
-        </select>
-      </li>
-    </ul>
-  </nav>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Symbiosis,leadership,relationship,book,books,brian,haywood">
+    <meta name="description" content="Explore the concept of Symbiosis in leadership and relationships in this book by Brian Haywood">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="My Symbiosis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mysimbosis.com">
+    <meta property="og:image" content="https://mysimbosis.com/images/og-image.jpg">
+    <meta property="og:description" content="Explore the concept of Symbiosis in leadership and relationships in this book by Brian Haywood">
 
-  <div class="overlay">
-    <header id="home">
-      <h1>Willkommen zur Buchveröffentlichung</h1>
-      <p>Entdecke inspirierende Leadership-Bücher für moderne Visionäre</p>
-    </header>
+    <title>Meine Symbiose</title>
 
-    <main class="content" id="books">
-      <h2></h2>
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Meine Symbiose</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#books">Bücher</a>
+          <ul class="dropdown-content">
+            <li><a href="book1.html">Symbose</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="order.html">Bestellen</a></li>
+        <li>
+          <select id="languageSwitcher" onchange="switchLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="de" selected>DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
 
-      <section class="book-subsection" id="book1" style="text-align: center;">
-  <h3>SYMBIOSE</h3>
-  <a href="book1-de.html">
-    <img src="images/mockup-paperback.webp" 
-         alt="Buch 1 Cover" 
-         style="width: 400px; border-radius: 12px; margin: 2rem auto; display: block;">
-  </a>
-  <p style="font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 1.5rem auto;">
-    Symbiotische Führung für bessere Beziehungen und nachhaltigen Erfolg.
-  </p>
-</section>
+    <div class="overlay">
+      <header id="home">
+        <h1>Symbiosis</h1>
+        <p>Symbiotische Führung nutzen, um Beziehungen zu gestalten und zu verbessern</p>
+      </header>
 
-    </main>
+      <main class="content" id="books">
+        <section class="book-subsection" id="book1">
+          <h2>Symbiose: Das Buch</h2>
+          <a href="book1.html">
+            <img src="images/mockup-paperback.webp" alt="Book Cover" class="book-cover">
+          </a>
+          <p class="book-subtitle">
+            Entdecken Sie inspirierende Bücher zum Thema Führung für moderne Visionäre.
+          </p>
+        </section>
+      </main>
 
-    <footer>
-      <p>Kontakt: <a href="mailto:contact@books.com" style="color: #b99624;">contact@books.com</a></p>
-      <p>&copy; 2025 LeadershipBücher</p>
-    </footer>
-  </div>
-</body>
+      <footer>
+        <p>Kontaktieren Sie uns unter: <a href="mailto:info@mysymbiosis.com">info@mysymbiosis.com</a></p>
+        <p>&copy; 2025 Brian Haywood</p>
+      </footer>
+    </div>
+  </body>
 </html>
